@@ -1,30 +1,35 @@
+<script>
+  import About from './components/about.vue';
+  import Title from './components/title.vue';
+  import Nav from './components/nav.vue';
+
+  export default {
+    components: {Title, About, Nav},
+    data() {
+      return {
+        showNav: window.innerWidth > 1000
+      };
+    },
+    methods: {
+      checkWidth() {
+        this.showNav = window.innerWidth > 1000;
+      }
+    },
+    mounted() {
+      window.addEventListener('resize', this.checkWidth);
+    },
+  }
+</script>
+
 <template>
   <div class="container">
-    <div class="yo">
-      about
+    <div class="title">
+      <Title />
+      <Nav v-if="showNav"/>
     </div>
     <div class="content">
-      <p>Home</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>Más contenido...</p>
-      <p>a</p>
-      <p>mas</p>
+      <h1 v-if="!showNav">About</h1>
+      <About />
     </div>
   </div>
 </template>
@@ -35,28 +40,41 @@
     padding: 0;
     height: 100%;
     background-color: #0a192f;
-    color: #dfd9d9;
+    color: rgb(226 232 240);
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
   }
 
   .container {
-    height: 100%;
+    height: 100vh;
+    padding: 1rem;
   }
 
-  .yo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;  
+  .title {
+    position: fixed;  
     height: 100vh;
+    width: 100%;
     padding: 20px;
-    box-sizing: border-box;
   }
 
   .content {
     margin-left: 50%;
     height: 100vh;
-    overflow-y: auto;
     padding: 20px;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 1000px) {
+    .title {
+      position: relative;
+      width: 100%;
+      height: auto;
+      justify-content: left;
+    }
+
+    .content {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 </style>
