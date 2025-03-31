@@ -2,9 +2,10 @@
   import About from './components/about.vue';
   import Title from './components/title.vue';
   import Nav from './components/nav.vue';
+  import SocialMedia from './components/socialMedia.vue';
 
   export default {
-    components: {Title, About, Nav},
+    components: {Title, About, Nav, SocialMedia},
     data() {
       return {
         showNav: window.innerWidth > 1000
@@ -26,6 +27,7 @@
     <div class="title">
       <Title />
       <Nav v-if="showNav"/>
+      <SocialMedia />
     </div>
     <div class="content">
       <h1 v-if="!showNav">About</h1>
