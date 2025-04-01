@@ -4,7 +4,13 @@
       <img src="../assets/github.png" class="social-icon" alt="GitHub">
     </a>
     <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <svg class="social-icon">...</svg>
+      <img src="../assets/in.png" class="social-icon" alt="LinkedIn">
+    </a>
+    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="../assets/ig.png" class="social-icon" alt="Instagram">
+    </a>
+    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+      <img src="../assets/mail.png" class="social-icon" alt="Mail">
     </a>
   </div>
 </template>
@@ -18,13 +24,15 @@
 }
 
 .social-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   transition: all 0.3s ease;
+  opacity: 0.7;
 }
 
 .social-icon:hover {
+  opacity: 1;
   transform: translateY(-1px);
-  filter: brightness(150%) saturate(100%);
+  filter: brightness(250%);
 }
 </style>
