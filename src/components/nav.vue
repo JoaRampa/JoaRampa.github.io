@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style>
+.navbar {
+  margin-top: 4rem
+}
+
 .nav-links {
   list-style: none;
   padding: 0;
@@ -50,21 +54,20 @@ export default {
   align-items: center;
   text-decoration: none;
   color: #dfd9d9;
-  font-size: 1.1cqmax;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  font-family: 'Orbitron';
+  text-transform: uppercase;
 }
 
 .dash {
-  width: 20px;
+  width: 40px;
   overflow: hidden;
-  transition: width, opacity;
+  transition: opacity 0.5s ease-in-out;
   opacity: 0.6;
-  margin-right: 8px;
 }
 
 .link:hover .dash, .active .dash, 
 .link:hover .text, .active .text {
-  width: 30px;
   opacity: 1;
   filter: brightness(250%);
   font-weight: bold;
@@ -73,5 +76,6 @@ export default {
 .active{
   font-weight: bold;
   filter: brightness(250%);
+  margin:0;
 }
 </style>

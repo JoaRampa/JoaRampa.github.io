@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 12rem;
 }
 
 .social-icon {
