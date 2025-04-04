@@ -122,6 +122,8 @@
       height: auto;
       justify-content: left;
       padding-left: 0;
+      min-width: 350px;
+      width: auto;
     }
 
     .content {
