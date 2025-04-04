@@ -2,14 +2,22 @@
   <nav class="navbar">
     <ul class="nav-links">
       <li>
-        <a href="#about" class="link" @click.prevent="setActive('#about')" :class="{ active: activeLink === '#about' }">
-          <span class="dash">&mdash;&mdash;</span>
+        <a href="#about" class="link"
+          @click.prevent="setActive('#about')"
+          @mouseenter="hoverLink = '#about'"
+          @mouseleave="hoverLink = ''"
+          :class="{ active: activeLink === '#about' }">
+          <span class="dash" v-html="'&mdash;&mdash;&mdash;&mdash;'"></span>
           <span class="text">About</span>
         </a>
       </li>
       <li>
-        <a href="#projects" class="link" @click.prevent="setActive('#projects')" :class="{ active: activeLink === '#projects' }">
-          <span class="dash">&mdash;&mdash;</span>
+        <a href="#projects" class="link" 
+          @click.prevent="setActive('#projects')"
+          @mouseenter="hoverLink = '#projects'"
+          @mouseleave="hoverLink = ''" 
+          :class="{ active: activeLink === '#projects' }">
+          <span class="dash" v-html="'&mdash;&mdash;&mdash;&mdash;'"></span>
           <span class="text">Projects</span>
         </a>
       </li>
@@ -21,7 +29,8 @@
 export default {
   data() {
     return {
-      activeLink: ''
+      activeLink: '',
+      hoverLink: ''
     };
   },
   methods: {
@@ -47,7 +56,11 @@ export default {
 .nav-links {
   list-style: none;
   padding: 0;
-  width: 180px;
+  width: 200px;
+}
+
+.nav-links li {
+  margin-bottom: .5rem;
 }
 
 .link {
@@ -58,26 +71,29 @@ export default {
   transition: all 0.5s ease-in-out;
   text-transform: uppercase;
   font-weight: 700;
+  gap: .75rem;
 }
 
 .text {
-  transition: all .8s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  font-size: 13px;
+  letter-spacing: .1em;
 }
 
 .dash {
-  width: 40px;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  width: 32px;
   overflow: hidden;
-  transition: all .8s ease-in-out;
   opacity: 0.6;
 }
 
 .link:hover .dash, .active .dash, 
 .link:hover .text, .active .text {
-  transition: opacity 0.8s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
   filter: brightness(250%);
   font-weight: bold;
-  transform: translateY(-1px);
+  width: 60px;
 }
 
 .active{
