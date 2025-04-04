@@ -14,35 +14,64 @@
     methods: {
       checkWidth() {
         this.showNav = window.innerWidth > 1000;
-      }
+      },
+
+      light(event) { 
+        const mouseX = `${event.clientX}px`;
+        const mouseY = `${event.clientY}px`;
+
+        document.documentElement.style.setProperty('--mouse-x', mouseX);
+        document.documentElement.style.setProperty('--mouse-y', mouseY);
+      },
     },
     mounted() {
       window.addEventListener('resize', this.checkWidth);
+      window.addEventListener('mousemove',this.light)
     },
+    beforeUnmount() {
+      window.removeEventListener('resize', this.checkWidth);
+      window.removeEventListener('mousemove', this.light);
+    }
   }
 </script>
 
 <template>
-  <div class="container">
-      <div class="title">
-        <Title />
-        <Nav v-if="showNav"/>
-        <SocialMedia />
+  <div class="efectoLinterna"></div>
+    <div class="container">
+        <div class="title">
+          <Title />
+          <Nav v-if="showNav"/>
+          <SocialMedia />
+        </div>
+      <div class="content">
+        <h1 v-if="!showNav">About</h1>
+        <About />
       </div>
-    <div class="content">
-      <h1 v-if="!showNav">About</h1>
-      <About />
     </div>
-  </div>
 </template>
 
 <style>
   html, body, #app {
     margin: 0;
+    overflow-x: hidden;
     background-color: #0a192f;
     color: rgb(226 232 240);
     scroll-behavior: smooth;
     font-family: sans-serif;
+  }
+
+  :root {
+    --mouse-x: 50vw;
+    --mouse-y: 50vh;
+  }
+
+  .efectoLinterna {
+    position: fixed;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: radial-gradient(circle 250px at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.15), transparent);
   }
 
   .container {

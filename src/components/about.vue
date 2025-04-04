@@ -4,3 +4,9 @@
   <p>In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios. Additionally, I also released a comprehensive video course a few years ago, guiding learners through building a web app with the Spotify API.</p>
   <p>In my spare time, I’m usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</p>
 </template>
+
+<style scoped>
+p {
+  opacity: 0.6;
+}
+</style>

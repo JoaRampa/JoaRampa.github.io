@@ -47,6 +47,7 @@ export default {
 .nav-links {
   list-style: none;
   padding: 0;
+  width: 180px;
 }
 
 .link {
@@ -54,23 +55,29 @@ export default {
   align-items: center;
   text-decoration: none;
   color: #dfd9d9;
-  transition: opacity 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-family: 'Orbitron';
   text-transform: uppercase;
+}
+
+.text {
+  transition: all .8s ease-in-out;
 }
 
 .dash {
   width: 40px;
   overflow: hidden;
-  transition: opacity 0.5s ease-in-out;
+  transition: all .8s ease-in-out;
   opacity: 0.6;
 }
 
 .link:hover .dash, .active .dash, 
 .link:hover .text, .active .text {
+  transition: opacity 0.8s ease-in-out;
   opacity: 1;
   filter: brightness(250%);
   font-weight: bold;
+  transform: translateY(-1px);
 }
 
 .active{
