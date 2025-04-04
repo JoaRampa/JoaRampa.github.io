@@ -3,9 +3,10 @@
   import Title from './components/title.vue';
   import Nav from './components/nav.vue';
   import SocialMedia from './components/socialMedia.vue';
+  import Projects from './components/projects.vue';
 
   export default {
-    components: {Title, About, Nav, SocialMedia},
+    components: {Title, About, Nav, SocialMedia, Projects},
     data() {
       return {
         showNav: window.innerWidth > 1000
@@ -44,8 +45,14 @@
           <SocialMedia />
         </div>
       <div class="content">
-        <h1 v-if="!showNav">About</h1>
-        <About />
+        <div>
+          <h3 v-if="!showNav">ABOUT</h3>
+          <About />
+        </div>
+        <div>
+          <h3 v-if="!showNav">PROJECTS</h3>
+          <Projects />
+        </div>
       </div>
     </div>
 </template>
@@ -54,7 +61,7 @@
   html, body, #app {
     margin: 0;
     overflow-x: hidden;
-    background-color: #0a192f;
+    background-color: #03132d;
     color: rgb(226 232 240);
     scroll-behavior: smooth;
     font-family: sans-serif;
@@ -63,6 +70,11 @@
   :root {
     --mouse-x: 50vw;
     --mouse-y: 50vh;
+  }
+
+  h3 {
+    font-weight: 700;
+    letter-spacing: .1em;
   }
 
   .efectoLinterna {
@@ -91,6 +103,8 @@
   }
 
   .content {
+    display: grid;
+    row-gap: 6rem;
     box-sizing: border-box;
     margin-left: 50%;
     padding-right: 9rem;

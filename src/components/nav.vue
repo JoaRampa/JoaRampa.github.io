@@ -56,8 +56,8 @@ export default {
   text-decoration: none;
   color: #dfd9d9;
   transition: all 0.5s ease-in-out;
-  font-family: 'Orbitron';
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .text {
