@@ -1,6 +1,5 @@
 <template>
   <div class="card">
-    <div class="card-image" :style="{ backgroundImage: `url(${image})` }"></div>
     <div class="card-content">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
@@ -48,8 +47,7 @@ export default {
 }
 
 .card-content {
-  padding: 16px 0;
-  color: #ccd6f6;
+  padding: 16px;
 }
 
 h3 {
@@ -59,7 +57,7 @@ h3 {
 
 p {
   font-size: 14px;
-  color: #8892b0;
+  opacity: 0.6;
   margin-bottom: 12px;
 }
 
@@ -69,12 +67,11 @@ p {
 
 .tech-tag {
   display: inline-block;
-  background-color: #64ffda;
+  background-color: #32d0ab;
   color: #0a192f;
   padding: 4px 8px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  border-radius: 4px;
+  margin: 0 8px 4px 0;
+  border-radius: 8px;
   font-size: 12px;
 }
 
@@ -85,7 +82,7 @@ p {
 
 .card-link {
   text-decoration: none;
-  color: #64ffda;
+  color: #32d0ab;
   font-weight: bold;
   font-size: 14px;
 }
@@ -97,6 +94,9 @@ p {
 @media (max-width: 1000px) {
   .card:hover {
     background-color:#03132d;
+  }
+  .card-content{
+    padding: 16px 0;
   }
 }
 </style>

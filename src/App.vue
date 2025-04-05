@@ -120,16 +120,16 @@
     .title {
       position: relative;
       height: auto;
-      justify-content: left;
       padding-left: 0;
       min-width: 350px;
-      width: auto;
+      margin-bottom: 3rem;
     }
 
     .content {
       padding-right: 0;
       margin-left: 0;
       width: 100%;
+      row-gap: 3rem;
     }
 
     .social-links {
