@@ -31,13 +31,14 @@ export default {
 /* Estilos generales */
 .card {
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-radius: 8px;
 }
 
 .card:hover {
   transform: translateY(-2px);
   background-color: #061938;
+  box-shadow: 2px 1px rgba(0, 0, 0, 0.306);
 }
 
 .card-image {
@@ -67,12 +68,13 @@ p {
 
 .tech-tag {
   display: inline-block;
-  background-color: #32d0ab;
-  color: #0a192f;
-  padding: 4px 8px;
+  background-color: #047d6172;
+  color: #11cfc8;
+  padding: 6px 10px;
   margin: 0 8px 4px 0;
-  border-radius: 8px;
-  font-size: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .card-links {
@@ -82,7 +84,7 @@ p {
 
 .card-link {
   text-decoration: none;
-  color: #32d0ab;
+  color: #11cfc8;
   font-weight: bold;
   font-size: 14px;
 }

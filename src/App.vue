@@ -45,14 +45,14 @@
           <SocialMedia />
         </div>
       <div class="content">
-        <div>
+        <section id="about">
           <h3 v-if="!showNav">ABOUT</h3>
           <About />
-        </div>
-        <div>
+        </section>
+        <section id="projects">
           <h3 v-if="!showNav">PROJECTS</h3>
           <Projects />
-        </div>
+        </section>
       </div>
     </div>
 </template>
