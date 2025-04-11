@@ -2,7 +2,7 @@
   <div class="projects-container">
     <ProjectCard
       title="Crypcreate"
-      description="Billetera de criptomonedas. Compra, venta, historial de transacciones y análisis de inversiones."
+      description="Cryptocurrency wallet. Buying, selling, transaction history, and investment analysis."
       :technologies="['Vue.js', 'Vuex', 'Axios']"
       codeLink="https://github.com/JoaRampa/cryptowallet-vuejs"
       liveLink="https://lab3-crypcreate.netlify.app/"

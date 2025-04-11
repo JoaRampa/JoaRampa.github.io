@@ -96,6 +96,7 @@ p {
 @media (max-width: 1000px) {
   .card:hover {
     background-color:#03132d;
+    box-shadow: none;
   }
   .card-content{
     padding: 16px 0;

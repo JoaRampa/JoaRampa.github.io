@@ -4,8 +4,10 @@
     <div class="info">
       <div>
         <h3 style="opacity: 0.8;">Full Stack Developer</h3>
-        <p>I build accessible, pixel-perfect</p>
-        <p> digital experiences for the web.</p>
+        <p>I build scalable applications.</p>
+        <p> With experience in front and backend,</p>
+        <p>I develop intuitive interfaces and robust</p>
+        <p>systems that ensure optimal performance.</p>
       </div>
       <!--<div>
         <img src="../assets/joa.jpg" alt="Profile picture">
