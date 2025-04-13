@@ -33,6 +33,7 @@ export default {
   width: 100%;
   transition: all 0.2s ease-in-out;
   border-radius: 8px;
+  z-index: 999;
 }
 
 .card:hover {
