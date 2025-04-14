@@ -7,8 +7,8 @@
         <span v-for="(tech, index) in technologies" :key="index" class="tech-tag">{{ tech }}</span>
       </div>
       <div class="card-links">
-        <a :href="codeLink" target="_blank" class="card-link">Ver Código</a>
-        <a :href="liveLink" target="_blank" class="card-link" v-if="liveLink">Demo en Vivo</a>
+        <a :href="codeLink" target="_blank" class="card-link">See code</a>
+        <a :href="liveLink" target="_blank" class="card-link" v-if="liveLink">Visit page</a>
       </div>
     </div>
   </div>
@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos generales */
 .card {
   width: 100%;
   transition: all 0.2s ease-in-out;
