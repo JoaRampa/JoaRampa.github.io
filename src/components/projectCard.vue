@@ -8,7 +8,7 @@
       </div>
       <div class="card-links">
         <a :href="codeLink" target="_blank" class="card-link">Ver Código</a>
-        <a :href="liveLink" target="_blank" class="card-link">Demo en Vivo</a>
+        <a :href="liveLink" target="_blank" class="card-link" v-if="liveLink">Demo en Vivo</a>
       </div>
     </div>
   </div>
