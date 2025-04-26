@@ -2,8 +2,8 @@
   <div class="projects-container">
     <ProjectCard
       title="LB Stock reform"
-      description="Aplicacion de stock reformada para la web"
-      :technologies="['Vue', 'SupaBase']"
+      description="Reworked stock app for the web."
+      :technologies="['Vue', 'SupaBase', 'JavaScript', 'CSS']"
       codeLink="https://github.com/JoaRampa/TUP-Final"
       liveLink="https://lbstock-tesi.netlify.app/"
     />
@@ -15,8 +15,14 @@
       liveLink="https://lab3-crypcreate.netlify.app/"
     />
     <ProjectCard
+      title="C# ASP.NET Application"
+      description="ASP.NET MVC application with authentication and order management, using Entity Framework and AppDbContext. Developed as a university project."
+      :technologies="['C#', 'ASP.NET MVC', 'Entity Framework', 'AppDbContext', 'SQL Server']"
+      codeLink="https://github.com/JoaRampa/cSharp-aspNet-MVC"
+    />
+    <ProjectCard
       title="LB Stock"
-      description="Aplicacion de stock para la empresa LB de articulos de limpieza. Hecha en concordancia con la tesis de la universidad."
+      description="Stock application for the LB cleaning supplies company. Developed in accordance with the university thesis."
       :technologies="['Vue', 'Express.js', 'SQLite3', 'Electron.js', 'Node.js']"
       codeLink="https://github.com/JoaRampa/lb_stock"
     />

@@ -3,14 +3,17 @@
     <a href="https://github.com/JoaRampa" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
       <img src="../assets/github.png" class="social-icon" alt="GitHub">
     </a>
-    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/joaquin-rampa-5b2861243/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
       <img src="../assets/in.png" class="social-icon" alt="LinkedIn">
     </a>
-    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <a href="https://www.instagram.com/joaarampa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
       <img src="../assets/ig.png" class="social-icon" alt="Instagram">
     </a>
-    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+    <a href="mailto:rampajoa@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
       <img src="../assets/mail.png" class="social-icon" alt="Mail">
+    </a>
+    <a href="https://profile.indeed.com/?hl=it_IT&co=IT&from=gnav-homepage" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+      <img src="../assets/indeed.png" class="social-icon" alt="Indeed" style="width: 2rem; height: 2.2rem;">
     </a>
   </div>
 </template>
