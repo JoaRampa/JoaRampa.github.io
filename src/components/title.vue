@@ -3,9 +3,10 @@
     <h1 style="font-size: 45px; margin: 0;">Joaquín Rampa</h1>
     <div class="info">
       <div>
-        <h3 style="opacity: 0.8;">Full Stack Developer</h3>
+        <h3 style="opacity: 0.8;">Front End Developer</h3>
         <p>I build scalable applications.</p>
-        <p> With experience in front and backend,</p>
+        <p> With experience in front and</p>
+        <p>university knowledge in backend,</p>
         <p>I develop intuitive interfaces and robust</p>
         <p>systems that ensure optimal performance.</p>
       </div>
@@ -24,8 +25,8 @@
 }
 
 p {
-  opacity: 0.6;
-  margin: 0;
+  opacity: 0.75;
+  margin: 2px 0;
 }
 
 img {

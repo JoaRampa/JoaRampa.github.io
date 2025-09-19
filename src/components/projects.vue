@@ -2,8 +2,8 @@
   <div class="projects-container">
     <ProjectCard
       title="LB Stock reform"
-      description="Reworked stock app for the web."
-      :technologies="['Vue', 'SupaBase', 'JavaScript', 'CSS']"
+      description="Reworked stock app for the web. (Work still in process!)"
+      :technologies="['Vue 3', 'SupaBase', 'JavaScript', 'CSS', 'UX/UI']"
       codeLink="https://github.com/JoaRampa/TUP-Final"
       liveLink="https://lbstock-tesi.netlify.app/"
     />
